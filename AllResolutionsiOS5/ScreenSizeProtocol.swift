@@ -31,4 +31,5 @@ import UIKit
 
 protocol ScreenSizeProtocol {
     func getStoryBoardBySizeType(SizeNickName: String) -> UIViewController
+    func getIphoneTypeByScreenSize() -> String
 }

@@ -9,11 +9,13 @@
 import UIKit
 
 class StoryboardByScreenSize : ScreenSizeProtocol{
+    
     func getStoryBoardBySizeType(SizeNickName: String) -> UIViewController {
         let viewController:UIViewController?
         let storyboard:UIStoryboard?
         let storyboardName:String?
         let storyboardIndicator:String?
+        
         if SizeNickName  == "4s"
         {
             storyboardName = "Main"
@@ -28,5 +30,28 @@ class StoryboardByScreenSize : ScreenSizeProtocol{
             storyboard?.instantiateViewController(withIdentifier: storyboardIndicator!)
         
         return viewController!
+    }
+    
+    func getIphoneTypeByScreenSize() -> String {
+        var sizeType: String!
+        // determine screen size
+        switch UIScreen.main.bounds.size.height {
+            // iPhone 4s
+            case 480:
+                sizeType = "4s"
+            // iPhone 5s
+            case 568:
+                sizeType = "5s"
+            // iPhone 6
+            case 667:
+                sizeType = "6"
+            // iPhone 6 Plus
+            case 736:
+                sizeType = "6p"
+            default:
+                // it's an iPad
+                sizeType = "ipad"
+        }
+        return sizeType;
     }
 }

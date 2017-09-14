@@ -39,51 +39,7 @@ class ScreenSize {
     init(_ argStoryBoardSelector:ScreenSizeProtocol) {
         self.storyBoardSelector = argStoryBoardSelector;
     }
-    
-    /**
-     getIphoneTypeByScreenSize
-     
-     - parameter name: パラメータの書き方
-     - throws: 例外処理の書き方
-     - returns: String
-     */
-    func getIphoneTypeByScreenSize() {
-        // determine screen size
-        switch UIScreen.main.bounds.size.height {
-        // iPhone 4s
-        case 480:
-            self.SizeType = "4s"
-        // iPhone 5s
-        case 568:
-            self.SizeType = "5s"
-        // iPhone 6
-        case 667:
-            self.SizeType = "6"
-        // iPhone 6 Plus
-        case 736:
-            self.SizeType = "6p"
-        default:
-            // it's an iPad
-            self.SizeType = "ipad"
-        }
-    }
-    
-    /**
-     getSizeType
-     
-     - parameter name: なし
-     - throws: 例外処理の書き方
-     - returns: String
-     */
-    func getSizeType() -> String {
-        if self.SizeType == nil
-        {
-            self.getIphoneTypeByScreenSize()
-        }
-        
-        return self.SizeType!;
-    }
-    
+
     
     /**
      setStoryBoardByIphoneType
@@ -93,7 +49,13 @@ class ScreenSize {
      - returns: UIViewController
      */
     func selectStoryBoardByIphoneType() -> UIViewController {
-        return storyBoardSelector!.getStoryBoardBySizeType(SizeNickName: self.getSizeType())
+        return storyBoardSelector!.getStoryBoardBySizeType(SizeNickName: storyBoardSelector!.getIphoneTypeByScreenSize())
+    }
+    
+    func initWindowWithStoryBoard(_ window:UIWindow) {
+        window.rootViewController = self.selectStoryBoardByIphoneType()
+        
+        window.makeKeyAndVisible()
     }
     
     
@@ -108,11 +70,6 @@ class ScreenSize {
         self.storyBoardSelector = argStoryBoardSelector;
     }
     
-    func initWindowWithStoryBoard(_ window:UIWindow) {        
-        window.rootViewController = self.selectStoryBoardByIphoneType()
-        
-        window.makeKeyAndVisible()
-    }
     
 }
 
