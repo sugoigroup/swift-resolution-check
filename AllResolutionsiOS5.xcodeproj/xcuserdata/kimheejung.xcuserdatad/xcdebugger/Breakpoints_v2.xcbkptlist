@@ -26,13 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AllResolutionsiOS5/ViewController.swift"
-            timestampString = "526959889.893155"
+            timestampString = "527081875.350183"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "webView(_:shouldStartLoadWith:navigationType:)"
-            landmarkType = "7">
+            startingLineNumber = "48"
+            endingLineNumber = "48">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -58,11 +56,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AllResolutionsiOS5/ViewControllerCustomCamera.swift"
-            timestampString = "527078830.150226"
+            timestampString = "527081974.947659"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -70,7 +68,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AllResolutionsiOS5/Util/CameraCaptureProcess.swift"
@@ -86,7 +84,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AllResolutionsiOS5/Util/MediaSelectProcess.swift"
@@ -102,7 +100,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AllResolutionsiOS5/Util/MediaSelectProcess.swift"
@@ -118,7 +116,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AllResolutionsiOS5/Util/MediaSelectProcess.swift"
@@ -134,7 +132,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AllResolutionsiOS5/Util/MediaSelectProcess.swift"
@@ -144,22 +142,6 @@
             startingLineNumber = "26"
             endingLineNumber = "26"
             landmarkName = "imagePickerControllerDidCancel(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AllResolutionsiOS5/ViewControllerCustomCamera.swift"
-            timestampString = "527078830.150226"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "phooto(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -277,7 +259,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AllResolutionsiOS5/Util/CameraCaptureProcess.swift"
@@ -293,7 +275,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AllResolutionsiOS5/Util/CameraCaptureProcess.swift"
@@ -313,11 +295,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AllResolutionsiOS5/ViewControllerCustomCamera.swift"
-            timestampString = "527078830.150226"
+            timestampString = "527081974.947659"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "phooto(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -329,11 +311,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AllResolutionsiOS5/ViewControllerCustomCamera.swift"
-            timestampString = "527078830.150226"
+            timestampString = "527081974.947659"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "phooto(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -345,11 +327,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AllResolutionsiOS5/ViewControllerCustomCamera.swift"
-            timestampString = "527078830.150226"
+            timestampString = "527081974.947659"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "runcamera(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -361,11 +343,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AllResolutionsiOS5/ViewControllerCustomCamera.swift"
-            timestampString = "527078830.150226"
+            timestampString = "527081974.947659"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "phooto(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -503,11 +485,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AllResolutionsiOS5/ViewControllerCustomCamera.swift"
-            timestampString = "527078830.150226"
+            timestampString = "527081974.947659"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "phooto(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -519,11 +501,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AllResolutionsiOS5/ViewControllerCustomCamera.swift"
-            timestampString = "527079712.635891"
+            timestampString = "527081361.816784"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
             landmarkName = "ViewControllerCustomCamera"
             landmarkType = "3">
             <Locations>
@@ -593,7 +575,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AllResolutionsiOS5/Util/CameraCaptureProcess.swift"
@@ -604,6 +586,84 @@
             endingLineNumber = "17"
             landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AllResolutionsiOS5/AppDelegate.swift"
+            timestampString = "527081434.068455"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AllResolutionsiOS5.AppDelegate.__deallocating_deinit"
+                  moduleName = "AllResolutionsiOS5"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kimheejung/Downloads/%E1%84%89%E1%85%B3%E1%84%8B%E1%85%B1%E1%84%91%E1%85%B3%E1%84%90%E1%85%B3/%E1%84%8B%E1%85%AA%E1%84%8B%E1%85%AE%E1%84%87%E1%85%AE%E1%86%A8%E1%84%89%E1%85%B3/SourceCode/Chapter01/AllResolutionsiOS5/AllResolutionsiOS5/AppDelegate.swift"
+                  timestampString = "527081434.108234"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AllResolutionsiOS5.AppDelegate.init () -&gt; AllResolutionsiOS5.AppDelegate"
+                  moduleName = "AllResolutionsiOS5"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kimheejung/Downloads/%E1%84%89%E1%85%B3%E1%84%8B%E1%85%B1%E1%84%91%E1%85%B3%E1%84%90%E1%85%B3/%E1%84%8B%E1%85%AA%E1%84%8B%E1%85%AE%E1%84%87%E1%85%AE%E1%86%A8%E1%84%89%E1%85%B3/SourceCode/Chapter01/AllResolutionsiOS5/AllResolutionsiOS5/AppDelegate.swift"
+                  timestampString = "527081434.111239"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AllResolutionsiOS5.AppDelegate.__allocating_init () -&gt; AllResolutionsiOS5.AppDelegate"
+                  moduleName = "AllResolutionsiOS5"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kimheejung/Downloads/%E1%84%89%E1%85%B3%E1%84%8B%E1%85%B1%E1%84%91%E1%85%B3%E1%84%90%E1%85%B3/%E1%84%8B%E1%85%AA%E1%84%8B%E1%85%AE%E1%84%87%E1%85%AE%E1%86%A8%E1%84%89%E1%85%B3/SourceCode/Chapter01/AllResolutionsiOS5/AllResolutionsiOS5/AppDelegate.swift"
+                  timestampString = "527081434.114189"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "AllResolutionsiOS5"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kimheejung/Downloads/%E1%84%89%E1%85%B3%E1%84%8B%E1%85%B1%E1%84%91%E1%85%B3%E1%84%90%E1%85%B3/%E1%84%8B%E1%85%AA%E1%84%8B%E1%85%AE%E1%84%87%E1%85%AE%E1%86%A8%E1%84%89%E1%85%B3/SourceCode/Chapter01/AllResolutionsiOS5/AllResolutionsiOS5/AppDelegate.swift"
+                  timestampString = "527081434.116088"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

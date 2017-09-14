@@ -34,8 +34,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="외부카메라"/>
                                 <connections>
-                                    <action selector="gotoar:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qgZ-XQ-ssZ"/>
-                                    <segue destination="iKE-BH-PRK" kind="push" id="5LQ-0k-WFm"/>
+                                    <segue destination="iKE-BH-PRK" kind="push" id="MTk-c2-nMV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VB2-Mo-NwS">
@@ -47,17 +46,13 @@
                                 <rect key="frame" x="96" y="535" width="76" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="리스트뷰"/>
-                                <connections>
-                                    <action selector="gotoar:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pNm-M1-zam"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="jlN-VB-Z60"/>
                     <connections>
-                        <outlet property="kidswatch" destination="EZY-uY-xaj" id="obZ-iB-ode"/>
-                        <outlet property="si18" destination="VB2-Mo-NwS" id="MpD-wc-X20"/>
+                        <outlet property="kidswatch" destination="EZY-uY-xaj" id="Cba-bA-bXO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -167,7 +162,7 @@
                         <viewControllerLayoutGuide type="top" id="K21-Eg-o8O"/>
                         <viewControllerLayoutGuide type="bottom" id="iEH-k6-PoX"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="Poi-y7-fEe">
+                    <view key="view" contentMode="scaleToFill" id="Poi-y7-fEe">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>

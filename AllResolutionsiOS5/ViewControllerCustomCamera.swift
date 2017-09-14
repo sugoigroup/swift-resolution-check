@@ -12,31 +12,22 @@ class ViewControllerCustomCamera: UIViewController {
 
     @IBOutlet weak var captureImageView: UIImageView!
     
+    
+    var myCamera: Camera?
+    var myCaptureImage: CameraCaptureProcess?
+    
+    var myMedia: Media?
+    var myMediaSelect: MediaSelectProcess?
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        var myCamera: Camera?
-        var myCaptureImage: CameraCaptureProcess?
-        
-        myCamera = Camera()
-        myCamera?.setMainUIView(argMainUIView: self)
-        myCamera?.setCamera(argCameraSelector: CameraInDevice())
-        
-        myCaptureImage = CameraCaptureProcess()
-        self.captureImageView?.contentMode = .scaleAspectFit
-        myCaptureImage?.captureUIView = self.captureImageView
-        myCamera?.setCaptureProcess(argCaptureProcess: myCaptureImage!)
-        
-        myCamera?.runCamera();
-
+       
         
         
     }
     
     @IBAction func runcamera(_ sender: Any) {
-        var myCamera: Camera?
-        var myCaptureImage: CameraCaptureProcess?
-
         myCamera = Camera()
         myCamera?.setMainUIView(argMainUIView: self)
         myCamera?.setCamera(argCameraSelector: CameraInDevice())
@@ -53,16 +44,16 @@ class ViewControllerCustomCamera: UIViewController {
     }
     
     @IBAction func phooto(_ sender: Any) {
-        let myMedia: Media? = Media()
-        let myMediaSelect: MediaSelectProcess? = MediaSelectProcess()
-        
+         myMedia = Media()
+         myMediaSelect = MediaSelectProcess()
+
         myMedia?.setMainUIView(argMainUIView: self)
         myMedia?.setMedia(argMediaSelector: MediaInDevice())
         
         captureImageView?.contentMode = .scaleAspectFit
         myMediaSelect?.selectUIView = captureImageView
         
-       // myMedia?.setSelectProcess(argSelectProcess: myMediaSelect!)
+        myMedia?.setSelectProcess(argSelectProcess: myMediaSelect!)
         
         myMedia?.runMedia();
 

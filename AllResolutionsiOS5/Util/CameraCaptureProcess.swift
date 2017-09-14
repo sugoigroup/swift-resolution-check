@@ -15,7 +15,7 @@ class CameraCaptureProcess : NSObject, CameraCaptureProtocol, UIImagePickerContr
     //delegator
     //　撮影が完了時した時に呼ばれる
     func imagePickerController(_ imagePicker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-       // afterCapture(captureData: info[UIImagePickerControllerOriginalImage])
+        afterCapture(captureData: info[UIImagePickerControllerOriginalImage])
         
         //閉じる処理
         imagePicker.dismiss(animated: true, completion: nil)
