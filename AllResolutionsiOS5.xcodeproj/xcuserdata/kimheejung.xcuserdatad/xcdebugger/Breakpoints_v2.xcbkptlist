@@ -39,22 +39,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AllResolutionsiOS5/ViewControllerCamera.swift"
-            timestampString = "526961558.132444"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
-            landmarkName = "showAlbum(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "AllResolutionsiOS5/ViewControllerCustomCamera.swift"
             timestampString = "527081974.947659"
             startingColumnNumber = "9223372036854775807"
@@ -696,6 +680,198 @@
             endingLineNumber = "13"
             landmarkName = "ImageSaveBeforeAfterProtocol"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AllResolutionsiOS5/testPhotoView.swift"
+            timestampString = "527143833.952275"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "goBack(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AllResolutionsiOS5/ViewControllerCamera.swift"
+            timestampString = "527145235.472405"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "captureOutput(_:didOutputSampleBuffer:from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AllResolutionsiOS5/ViewControllerCamera.swift"
+            timestampString = "527143988.000794"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "captureOutput(_:didOutputSampleBuffer:from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AllResolutionsiOS5/ViewControllerCamera.swift"
+            timestampString = "527145235.472405"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "captureOutput(_:didOutputSampleBuffer:from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AllResolutionsiOS5.ViewControllerCamera.captureOutput (Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.AVCaptureOutput&gt;, didDrop : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.CMSampleBuffer&gt;, from : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.AVCaptureConnection&gt;) -&gt; ()"
+                  moduleName = "AllResolutionsiOS5"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kimheejung/Downloads/%E1%84%89%E1%85%B3%E1%84%8B%E1%85%B1%E1%84%91%E1%85%B3%E1%84%90%E1%85%B3/%E1%84%8B%E1%85%AA%E1%84%8B%E1%85%AE%E1%84%87%E1%85%AE%E1%86%A8%E1%84%89%E1%85%B3/SourceCode/Chapter01/AllResolutionsiOS5/AllResolutionsiOS5/ViewControllerCamera.swift"
+                  timestampString = "527145619.913656"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "288">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AllResolutionsiOS5.ViewControllerCamera.(captureOutput (Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.AVCaptureOutput&gt;, didDrop : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.CMSampleBuffer&gt;, from : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.AVCaptureConnection&gt;) -&gt; ()).(closure #1)"
+                  moduleName = "AllResolutionsiOS5"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kimheejung/Downloads/%E1%84%89%E1%85%B3%E1%84%8B%E1%85%B1%E1%84%91%E1%85%B3%E1%84%90%E1%85%B3/%E1%84%8B%E1%85%AA%E1%84%8B%E1%85%AE%E1%84%87%E1%85%AE%E1%86%A8%E1%84%89%E1%85%B3/SourceCode/Chapter01/AllResolutionsiOS5/AllResolutionsiOS5/ViewControllerCamera.swift"
+                  timestampString = "527145619.915155"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AllResolutionsiOS5/ViewControllerCamera.swift"
+            timestampString = "527145235.472405"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "captureOutput(_:didOutputSampleBuffer:from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AllResolutionsiOS5/ViewControllerCamera.swift"
+            timestampString = "527145235.472405"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "captureOutput(_:didOutputSampleBuffer:from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AllResolutionsiOS5.ViewControllerCamera.captureOutput (Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.AVCaptureOutput&gt;, didDrop : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.CMSampleBuffer&gt;, from : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.AVCaptureConnection&gt;) -&gt; ()"
+                  moduleName = "AllResolutionsiOS5"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kimheejung/Downloads/%E1%84%89%E1%85%B3%E1%84%8B%E1%85%B1%E1%84%91%E1%85%B3%E1%84%90%E1%85%B3/%E1%84%8B%E1%85%AA%E1%84%8B%E1%85%AE%E1%84%87%E1%85%AE%E1%86%A8%E1%84%89%E1%85%B3/SourceCode/Chapter01/AllResolutionsiOS5/AllResolutionsiOS5/ViewControllerCamera.swift"
+                  timestampString = "527145619.918839"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AllResolutionsiOS5.ViewControllerCamera.captureOutput (Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.AVCaptureOutput&gt;, didDrop : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.CMSampleBuffer&gt;, from : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.AVCaptureConnection&gt;) -&gt; ()"
+                  moduleName = "AllResolutionsiOS5"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kimheejung/Downloads/%E1%84%89%E1%85%B3%E1%84%8B%E1%85%B1%E1%84%91%E1%85%B3%E1%84%90%E1%85%B3/%E1%84%8B%E1%85%AA%E1%84%8B%E1%85%AE%E1%84%87%E1%85%AE%E1%86%A8%E1%84%89%E1%85%B3/SourceCode/Chapter01/AllResolutionsiOS5/AllResolutionsiOS5/ViewControllerCamera.swift"
+                  timestampString = "527145619.920216"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "276">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AllResolutionsiOS5/ViewControllerCamera.swift"
+            timestampString = "527145235.472405"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "getImageFromSampleBuffer(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AllResolutionsiOS5/ViewControllerCamera.swift"
+            timestampString = "527145438.311715"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "fff(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -33,6 +33,7 @@
 		DFCFCCAD1F6B641500CF053C /* ImageSaveBeforeAfterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCFCCAC1F6B641500CF053C /* ImageSaveBeforeAfterProtocol.swift */; };
 		DFCFCCAF1F6B697600CF053C /* imageSaveBeforeAfter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCFCCAE1F6B697600CF053C /* imageSaveBeforeAfter.swift */; };
 		DFCFCCB11F6B6B3000CF053C /* ImageFilterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCFCCB01F6B6B3000CF053C /* ImageFilterProtocol.swift */; };
+		DFCFCCB31F6B8FFC00CF053C /* testPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCFCCB21F6B8FFC00CF053C /* testPhotoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		DFCFCCAC1F6B641500CF053C /* ImageSaveBeforeAfterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSaveBeforeAfterProtocol.swift; sourceTree = "<group>"; };
 		DFCFCCAE1F6B697600CF053C /* imageSaveBeforeAfter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imageSaveBeforeAfter.swift; sourceTree = "<group>"; };
 		DFCFCCB01F6B6B3000CF053C /* ImageFilterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFilterProtocol.swift; sourceTree = "<group>"; };
+		DFCFCCB21F6B8FFC00CF053C /* testPhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testPhotoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				1D2E2E1F1B2440BE00B2155E /* ViewController.swift */,
+				DFCFCCB21F6B8FFC00CF053C /* testPhotoView.swift */,
 				DFA2D2771F68EF86004B5881 /* ViewControllerCustomCamera.swift */,
 				DF13DFAD1F67CBAF0038DC73 /* ViewControllerCamera.swift */,
 			);
@@ -378,6 +381,7 @@
 				DFA2D2761F68ED05004B5881 /* Camera.swift in Sources */,
 				DFCFCCAD1F6B641500CF053C /* ImageSaveBeforeAfterProtocol.swift in Sources */,
 				DF13DFAE1F67CBAF0038DC73 /* ViewControllerCamera.swift in Sources */,
+				DFCFCCB31F6B8FFC00CF053C /* testPhotoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

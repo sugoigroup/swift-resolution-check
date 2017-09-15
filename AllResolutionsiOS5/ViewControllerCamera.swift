@@ -7,110 +7,22 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewControllerCamera: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewControllerCamera: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
     
-    @IBOutlet weak var cameraVIew: UIImageView!
+    let captureSession = AVCaptureSession()
+    var previewLayer: CALayer!
     
-    @IBOutlet weak var bCameraStart: UIButton!
-    @IBOutlet weak var bSavePic : UIButton!
-    @IBOutlet weak var bAlbum : UIButton!
-    
-    @IBOutlet weak var sipal: UIButton!
-    @IBOutlet var label : UILabel!
-    
-    
+    var captureDevice:AVCaptureDevice!
+    var takePhoto = false
+
+    @IBOutlet weak var imageView: UIImageView!
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        label.text = "Tap the [Start] to take a picture"
-        
-    }
-    
-    // カメラの撮影開始
-    @IBAction func cameraStart(_ sender : AnyObject) {
-        
-        let sourceType:UIImagePickerControllerSourceType = UIImagePickerControllerSourceType.camera
-        // カメラが利用可能かチェック
-        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera){
-            // インスタンスの作成
-            let cameraPicker = UIImagePickerController()
-            cameraPicker.sourceType = sourceType
-            cameraPicker.delegate = self
-            self.present(cameraPicker, animated: true, completion: nil)
-            
-        }
-        else{
-            label.text = "error"
-            
-        }
-    }
-    
-    //　撮影が完了時した時に呼ばれる
-    func imagePickerController(_ imagePicker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        
-        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            cameraVIew?.contentMode = .scaleAspectFit
-            cameraVIew.image = pickedImage
-            
-        }
-        
-        //閉じる処理
-        imagePicker.dismiss(animated: true, completion: nil)
-        label.text = "Tap the [Save] to save a picture"
-        
-    }
-    
-    // 撮影がキャンセルされた時に呼ばれる
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        picker.dismiss(animated: true, completion: nil)
-        label.text = "Canceled"
-    }
-    
-    
-    // 写真を保存
-    @IBAction func savePic(_ sender : AnyObject) {
-        let image:UIImage! = cameraVIew.image
-        
-        if image != nil {
-            UIImageWriteToSavedPhotosAlbum(image, self, #selector(ViewControllerCamera.image(_:didFinishSavingWithError:contextInfo:)), nil)
-        }
-        else{
-            label.text = "image Failed !"
-        }
-        
-    }
-    
-    // 書き込み完了結果の受け取り
-    func image(_ image: UIImage, didFinishSavingWithError error: NSError!, contextInfo: UnsafeMutableRawPointer) {
-        print("1")
-        
-        if error != nil {
-            print(error.code)
-            label.text = "Save Failed !"
-        }
-        else{
-            label.text = "Save Succeeded"
-        }
-    }
-    
-    // アルバムを表示
-    @IBAction func showAlbum(_ sender : AnyObject) {
-        _ = UIImagePickerController( )
-        
-        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary){
-            // インスタンスの作成
-            let cameraPicker = UIImagePickerController()
-            cameraPicker.sourceType = .photoLibrary
-            cameraPicker.delegate = self
-            self.present(cameraPicker, animated: true, completion: nil)
-            
-            label.text = "Tap the [Start] to save a picture"
-        }
-        else{
-            label.text = "error"
-            
-        }
+       
+        prepareCamera()
         
     }
     
@@ -118,5 +30,92 @@ class ViewControllerCamera: UIViewController, UIImagePickerControllerDelegate, U
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func fff(_ sender: Any) {
+        takePhoto = true
+    }
     
+    
+    func prepareCamera() {
+        captureSession.sessionPreset = AVCaptureSessionPresetPhoto
+        
+        if let ableDevie = AVCaptureDeviceDiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: AVMediaTypeVideo, position: .back).devices {
+            captureDevice = ableDevie.first!
+            beginSession()
+        }
+    }
+    
+    func beginSession () {
+        do {
+            let captureDeviceInput = try AVCaptureDeviceInput(device: captureDevice)
+            captureSession.addInput(captureDeviceInput)
+        }catch{
+            print(error.localizedDescription)
+        }
+        
+        if let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession) {
+            self.previewLayer = previewLayer
+            self.view.layer.addSublayer(self.previewLayer)
+            self.previewLayer.frame = imageView.layer.frame
+            captureSession.startRunning()
+            
+            
+            let dataOutput = AVCaptureVideoDataOutput()
+            dataOutput.videoSettings = [(kCVPixelBufferPixelFormatTypeKey as NSString): NSNumber(value: kCVPixelFormatType_32BGRA)]
+            dataOutput.alwaysDiscardsLateVideoFrames = true
+            
+            if captureSession.canAddOutput(dataOutput) {
+                captureSession.addOutput(dataOutput)
+            }
+            
+            captureSession.commitConfiguration()
+            
+            let queue = DispatchQueue(label: "com.my.queue")
+            dataOutput.setSampleBufferDelegate(self , queue: queue)
+        }
+    }
+    
+    func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputSampleBuffer sampleBuffer: CMSampleBuffer!, from connection: AVCaptureConnection!) {
+        if takePhoto {
+            takePhoto = false
+            
+            
+            
+            if let image = self.getImageFromSampleBuffer(sampleBuffer){
+                DispatchQueue.main.async {
+                    let photoVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:"PhotoVC") as! testPhotoView
+                    photoVC.takenPhoto = image
+                    DispatchQueue.main.async {
+                        self.present(photoVC, animated: true, completion: nil)
+                    }
+                }
+            }
+        }
+    }
+    
+    func getImageFromSampleBuffer (_ sampleBuffer: CMSampleBuffer) -> UIImage?{
+        // Sampling Bufferから画像を取得
+        let imageBuffer:CVImageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer)!
+        
+        // pixel buffer のベースアドレスをロック
+        CVPixelBufferLockBaseAddress(imageBuffer, CVPixelBufferLockFlags(rawValue: CVOptionFlags(0)))
+        
+        let baseAddress:UnsafeMutableRawPointer = CVPixelBufferGetBaseAddressOfPlane(imageBuffer, 0)!
+        
+        let bytesPerRow:Int = CVPixelBufferGetBytesPerRow(imageBuffer)
+        let width:Int = CVPixelBufferGetWidth(imageBuffer)
+        let height:Int = CVPixelBufferGetHeight(imageBuffer)
+        
+        
+        // 色空間
+        let colorSpace:CGColorSpace = CGColorSpaceCreateDeviceRGB()
+        
+        //let bitsPerCompornent:Int = 8
+        // swift 2.0
+        let newContext:CGContext = CGContext(data: baseAddress, width: width, height: height, bitsPerComponent: 8, bytesPerRow: bytesPerRow, space: colorSpace,  bitmapInfo: CGImageAlphaInfo.premultipliedFirst.rawValue|CGBitmapInfo.byteOrder32Little.rawValue)!
+        
+        let imageRef:CGImage = newContext.makeImage()!
+        let resultImage = UIImage(cgImage: imageRef, scale: 1.0, orientation: UIImageOrientation.right)
+        
+        return resultImage
+    }
 }
