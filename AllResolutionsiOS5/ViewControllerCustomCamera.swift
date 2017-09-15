@@ -60,6 +60,14 @@ class ViewControllerCustomCamera: UIViewController {
     }
     
     
+    @IBAction func save(_ sender: Any) {
+        let img: Image = Image()
+        img.setImageData(argImageData: captureImageView.image!)
+        
+        img.convertUIImage()
+        img.saveToPhotoAlbum()
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

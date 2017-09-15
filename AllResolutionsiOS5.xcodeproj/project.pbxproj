@@ -29,6 +29,10 @@
 		DFB6C6611F6A670F00DDDFE9 /* MediaSelectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB6C6601F6A670F00DDDFE9 /* MediaSelectProtocol.swift */; };
 		DFB6C6631F6A674900DDDFE9 /* MediaInDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB6C6621F6A674900DDDFE9 /* MediaInDevice.swift */; };
 		DFB6C6651F6A67E600DDDFE9 /* MediaSelectProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB6C6641F6A67E600DDDFE9 /* MediaSelectProcess.swift */; };
+		DFCFCCAB1F6B5F6A00CF053C /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCFCCAA1F6B5F6A00CF053C /* Image.swift */; };
+		DFCFCCAD1F6B641500CF053C /* ImageSaveBeforeAfterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCFCCAC1F6B641500CF053C /* ImageSaveBeforeAfterProtocol.swift */; };
+		DFCFCCAF1F6B697600CF053C /* imageSaveBeforeAfter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCFCCAE1F6B697600CF053C /* imageSaveBeforeAfter.swift */; };
+		DFCFCCB11F6B6B3000CF053C /* ImageFilterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCFCCB01F6B6B3000CF053C /* ImageFilterProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,10 @@
 		DFB6C6601F6A670F00DDDFE9 /* MediaSelectProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaSelectProtocol.swift; sourceTree = "<group>"; };
 		DFB6C6621F6A674900DDDFE9 /* MediaInDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaInDevice.swift; sourceTree = "<group>"; };
 		DFB6C6641F6A67E600DDDFE9 /* MediaSelectProcess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MediaSelectProcess.swift; path = Util/MediaSelectProcess.swift; sourceTree = "<group>"; };
+		DFCFCCAA1F6B5F6A00CF053C /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		DFCFCCAC1F6B641500CF053C /* ImageSaveBeforeAfterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSaveBeforeAfterProtocol.swift; sourceTree = "<group>"; };
+		DFCFCCAE1F6B697600CF053C /* imageSaveBeforeAfter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imageSaveBeforeAfter.swift; sourceTree = "<group>"; };
+		DFCFCCB01F6B6B3000CF053C /* ImageFilterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFilterProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,12 +118,12 @@
 			isa = PBXGroup;
 			children = (
 				DF13DFAF1F68B0100038DC73 /* SingleTone */,
-				1D2E2E261B2440BE00B2155E /* LaunchScreen.xib */,
 				1D2E2E241B2440BE00B2155E /* Images.xcassets */,
 				DF4543EC1F66D69600976BF3 /* Controllers */,
 				DF1EA6F81F6656FF000E8BCA /* Utils */,
 				DF4543ED1F66D6F100976BF3 /* Implements */,
 				DF4543EB1F66D56200976BF3 /* Views */,
+				DFCFCCA81F6AD93900CF053C /* VO */,
 				1D2E2E1B1B2440BE00B2155E /* Supporting Files */,
 			);
 			path = AllResolutionsiOS5;
@@ -157,6 +165,7 @@
 		DF1EA6F81F6656FF000E8BCA /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				DFCFCCA91F6B503A00CF053C /* Image */,
 				DFB6C65B1F6A666D00DDDFE9 /* Media */,
 				DFA2D2741F68ECB0004B5881 /* Camera */,
 				DF1EA6F91F665713000E8BCA /* Screen */,
@@ -177,6 +186,7 @@
 		DF4543EB1F66D56200976BF3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1D2E2E261B2440BE00B2155E /* LaunchScreen.xib */,
 				1D2E2E211B2440BE00B2155E /* Main.storyboard */,
 				1D2E2E3D1B2449C500B2155E /* Main6.storyboard */,
 			);
@@ -201,6 +211,7 @@
 				DFB6C6621F6A674900DDDFE9 /* MediaInDevice.swift */,
 				DFB6C6641F6A67E600DDDFE9 /* MediaSelectProcess.swift */,
 				DF1EA7001F6670B9000E8BCA /* StoryboardByScreenSize.swift */,
+				DFCFCCAE1F6B697600CF053C /* imageSaveBeforeAfter.swift */,
 			);
 			name = Implements;
 			sourceTree = "<group>";
@@ -223,6 +234,23 @@
 				DFB6C6601F6A670F00DDDFE9 /* MediaSelectProtocol.swift */,
 			);
 			name = Media;
+			sourceTree = "<group>";
+		};
+		DFCFCCA81F6AD93900CF053C /* VO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = VO;
+			sourceTree = "<group>";
+		};
+		DFCFCCA91F6B503A00CF053C /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				DFCFCCAA1F6B5F6A00CF053C /* Image.swift */,
+				DFCFCCB01F6B6B3000CF053C /* ImageFilterProtocol.swift */,
+				DFCFCCAC1F6B641500CF053C /* ImageSaveBeforeAfterProtocol.swift */,
+			);
+			name = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF1EA6FF1F667075000E8BCA /* ScreenSizeProtocol.swift in Sources */,
+				DFCFCCAB1F6B5F6A00CF053C /* Image.swift in Sources */,
 				1D2E2E201B2440BE00B2155E /* ViewController.swift in Sources */,
 				DFA2D27C1F68F8C4004B5881 /* CameraProtocol.swift in Sources */,
 				DF1EA6FD1F665B01000E8BCA /* ScreenSize.swift in Sources */,
@@ -340,11 +369,14 @@
 				DFA2D2781F68EF86004B5881 /* ViewControllerCustomCamera.swift in Sources */,
 				DFB6C6581F6A41BB00DDDFE9 /* CameraCaptureProcess.swift in Sources */,
 				1D2E2E1E1B2440BE00B2155E /* AppDelegate.swift in Sources */,
+				DFCFCCAF1F6B697600CF053C /* imageSaveBeforeAfter.swift in Sources */,
 				DFA2D27A1F68F6EE004B5881 /* CameraInDevice.swift in Sources */,
 				DFB6C65A1F6A44C100DDDFE9 /* CameraCaptureProtocol.swift in Sources */,
 				DFB6C65D1F6A668100DDDFE9 /* Media.swift in Sources */,
 				DFB6C6611F6A670F00DDDFE9 /* MediaSelectProtocol.swift in Sources */,
+				DFCFCCB11F6B6B3000CF053C /* ImageFilterProtocol.swift in Sources */,
 				DFA2D2761F68ED05004B5881 /* Camera.swift in Sources */,
+				DFCFCCAD1F6B641500CF053C /* ImageSaveBeforeAfterProtocol.swift in Sources */,
 				DF13DFAE1F67CBAF0038DC73 /* ViewControllerCamera.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
